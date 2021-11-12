@@ -12,16 +12,20 @@ const Home = () => {
     const params = useParams();
 
     const [categories, setCategories] = useState([]);
-    
+    const [categoriesNames, setCategoriesNames] = useState([]);
+
     useEffect(() => {
         const categories = Object.values(products);
-        setCategories(categories)
+        const categoriesNames = Object.keys(products);
+        setCategories(categories);
+        setCategoriesNames(categoriesNames);
     }, [])
 
     const curentCategory = (Object.values(params)).toString();
     // this is like match from RRD5
     console.log(curentCategory)
     console.log(categories)
+    console.log(categoriesNames)
     return (
         <div>
             <Layout>
@@ -32,7 +36,7 @@ const Home = () => {
                             categories && categories.map((category, index) =>
                                 <HomeCategory
                                     key={index}
-                                    route={category.name}
+                                    route={categoriesNames[index]}
                                     category={category}
                                 />
                             )
