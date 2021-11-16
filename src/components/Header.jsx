@@ -1,14 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {connect } from 'react-redux'
 
 import Logo from '../assets/images/logo.png';
 import { ReactComponent as ShoppingCart } from '../assets/icons/shopping-cart.svg';
 
 import './Header.css'
-// Pentru Home, About si majoritatea paginilor ce vor fi create in urmatoarele cursuri, avem nevoie de un header
-// si un footer. Headerul va contine navbar-ul, deci link-urile utile catre alte pagini. Momentan, vom vrea ca
-// header-ul sa contina link-uri catre Home si Login
-function Header() {
+
+const Header = (props) => {
+    const {productsNumberCart} = props;
     return(
         <header className="border-bottom mb-1">
             {/* Continutul header-ului trebuie sa fie centrat si sa nu depaseasca dimensiunile
@@ -23,11 +23,20 @@ function Header() {
                 <div>
                     <Link to="/login" className="h5">Login</Link>
                     {/* ShoppingCart este un SVG! */}
+                    <Link to="/cart">
                     <ShoppingCart className="ml-2"/>
+                    {productsNumberCart}
+                    </Link>
                 </div>
             </div>
         </header>
     );
 }
 
-export default Header;
+const mapStateToProps = (state) => {
+    return {
+        productsNumberCart: state.products.length
+    }
+}
+
+export default connect(mapStateToProps)(Header);

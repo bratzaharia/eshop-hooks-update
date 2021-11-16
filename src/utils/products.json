@@ -11,7 +11,8 @@
         "colour": "Negru",
         "material": "Piele",
         "brand": "Massimo Dutti",
-        "description": "Sneakerși din piele cu talpă inițial albă, din colecția de toamnă-iarnă 2019, Massimo Dutti."
+        "description": "Sneakerși din piele cu talpă inițial albă, din colecția de toamnă-iarnă 2019, Massimo Dutti.",
+        "quantity": 1
       },
       {
         "id": 2,
@@ -23,7 +24,8 @@
         "colour": "Negru",
         "material": "Pânză",
         "brand": "Polo Ralph Lauren",
-        "description": "Teniși din pânză cu talpă inițial albă, din colecția de primăvară-vară 2019, Fashion Days."
+        "description": "Teniși din pânză cu talpă inițial albă, din colecția de primăvară-vară 2019, Fashion Days.",
+        "quantity": 1
       },
       {
         "id": 3,
@@ -35,12 +37,14 @@
         "colour": "Maro",
         "material": "Piele",
         "brand": "Massimo Dutti",
-        "description": "Ghete maro din piele, din colecția de toamnă-iarnă 2017, Massimo Dutti."
+        "description": "Ghete maro din piele, din colecția de toamnă-iarnă 2017, Massimo Dutti.",
+        "quantity": 1
       }
     ],
     "image": "https://images.unsplash.com/photo-1636517519797-c397d0a76bf7?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
     "name": "Încălțăminte",
-    "description": "Ghete, pantofi, sneakerși: finețe garantată!"
+    "description": "Ghete, pantofi, sneakerși: finețe garantată!",
+    "quantity": 1
   },
   "sweaters": {
     "items": [
@@ -54,7 +58,8 @@
         "colour": "Maro",
         "material": "Cașmir",
         "brand": "DS Damat",
-        "description": "Pulovăr din cașmir, slim fit, colecția toamnă-iarnă 2019, DS Damat."
+        "description": "Pulovăr din cașmir, slim fit, colecția toamnă-iarnă 2019, DS Damat.",
+        "quantity": 1
       },
       {
         "id": 5,
@@ -66,7 +71,8 @@
         "colour": "Multicolor",
         "material": "Bumbac",
         "brand": "McNeal",
-        "description": "Pulovăr multicolor, colecția toamnă-iarnă 209, McNeal."
+        "description": "Pulovăr multicolor, colecția toamnă-iarnă 209, McNeal.",
+        "quantity": 1
       },
       {
         "id": 6,
@@ -78,7 +84,8 @@
         "colour": "Multicolor",
         "material": "Lână",
         "brand": "SELECTED",
-        "description": "Pulovăr din lână, în carouri, colecția toamnă-iarnă 2019, SELECTED."
+        "description": "Pulovăr din lână, în carouri, colecția toamnă-iarnă 2019, SELECTED.",
+        "quantity": 1
       },
       {
         "id": 7,
@@ -90,12 +97,14 @@
         "colour": "Crem",
         "material": "Lână",
         "brand": "Massimo Dutti",
-        "description": "Pulovăr din lână cu model, colecția toamnă-iarnă 2019, Massimo Dutti."
+        "description": "Pulovăr din lână cu model, colecția toamnă-iarnă 2019, Massimo Dutti.",
+        "quantity": 1
       }
     ],
     "image": "https://images.pexels.com/photos/2813998/pexels-photo-2813998.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     "name": "Pulovere",
-    "description": "Pulovărașe elegănțele, slim, clasă superioară."
+    "description": "Pulovărașe elegănțele, slim, clasă superioară.",
+    "quantity": 1
   },
   "pants": {
     "items": [
@@ -109,7 +118,8 @@
         "colour": "Bleumarin închis",
         "material": "Blug",
         "brand": "DS Damat",
-        "description": "Blugi bleumarin, slim fit, colecția primăvară-vară 2019, DS Damat."
+        "description": "Blugi bleumarin, slim fit, colecția primăvară-vară 2019, DS Damat.",
+        "quantity": 1
       },
       {
         "id": 9,
@@ -121,12 +131,14 @@
         "colour": "Negru-gri",
         "material": "Blug",
         "brand": "DS Damat",
-        "description": "Blugi negri, slim fit, colecția toamnă-iarnă 2019, DS Damat."
+        "description": "Blugi negri, slim fit, colecția toamnă-iarnă 2019, DS Damat.",
+        "quantity": 1
       }
     ],
     "image": "https://images.pexels.com/photos/2813995/pexels-photo-2813995.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     "name": "Pantaloni",
-    "description": "Jeanși și pantaloni pentru baieții care și-o ard patroni!"
+    "description": "Jeanși și pantaloni pentru baieții care și-o ard patroni!",
+    "quantity": 1
   },
   "jackets": {
     "items": [
@@ -140,7 +152,8 @@
         "colour": "Gri închis",
         "material": "Lână virgină",
         "brand": "Peek and Cloppenburg",
-        "description": "Haină lungă din lână virgină, colecția toamnă-iarnă 2018, Peek and Cloppenburg."
+        "description": "Haină lungă din lână virgină, colecția toamnă-iarnă 2018, Peek and Cloppenburg.",
+        "quantity": 1
       },
       {
         "id": 11,
@@ -152,12 +165,14 @@
         "colour": "Bleumarin",
         "material": "Poliester",
         "brand": "DS Damat",
-        "description": "Geacă bleumarin cu glugă detașabilă, colecția toamnă-iarnă 2019, DS Damat."
+        "description": "Geacă bleumarin cu glugă detașabilă, colecția toamnă-iarnă 2019, DS Damat.",
+       "quantity": 1
       }
     ],
     "image": "https://images.unsplash.com/photo-1469460340997-2f854421e72f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJsb25kZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60",
     "name": "Geci&Haine",
-    "description": "Confortabile, călduroase și nu arăți ca un cartof!"
+    "description": "Confortabile, călduroase și nu arăți ca un cartof!",
+    "quantity": 1
   },
   "tshirts": {
     "items": [
@@ -171,7 +186,8 @@
         "colour": "Multicolor",
         "material": "Bumbac",
         "brand": "Lacoste",
-        "description": "Tricou în dungi, colecția primăvară-vară 2019, Lacoste."
+        "description": "Tricou în dungi, colecția primăvară-vară 2019, Lacoste.",
+        "quantity": 1
       },
       {
         "id": 13,
@@ -183,7 +199,8 @@
         "colour": "Roșu",
         "material": "Poliester",
         "brand": "Li Ning",
-        "description": "Tricou de ping pong cu imprimeu cu dragon, purtat de jucatorii naționalei chinei în 2013."
+        "description": "Tricou de ping pong cu imprimeu cu dragon, purtat de jucatorii naționalei chinei în 2013.",
+        "quantity": 1
       },
       {
         "id": 14,
@@ -195,12 +212,14 @@
         "colour": "Galben-Negru",
         "material": "Poliester",
         "brand": "Puma",
-        "description": "Tricoul purtat de Borussia Dortmund în sezonul competițional 2018-2019, cu numarul 7 și numele 'SANCHO'. Tricoul este semnat de portarul Borussiei, Roman Burki."
+        "description": "Tricoul purtat de Borussia Dortmund în sezonul competițional 2018-2019, cu numarul 7 și numele 'SANCHO'. Tricoul este semnat de portarul Borussiei, Roman Burki.",
+        "quantity": 1
       }
     ],
     "image": "https://images.pexels.com/photos/3762849/pexels-photo-3762849.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     "name": "Tricouri",
-    "description": "Și de băiețeală și de sport."
+    "description": "Și de băiețeală și de sport.",
+    "quantity": 1
   },
   "accesories": {
     "items": [
@@ -214,7 +233,8 @@
         "colour": "Gri-Bleumarin",
         "material": "Cașmir",
         "brand": "Trussardi Jeans",
-        "description": "Fular cu imprimeu, din colecția toamnă-iarnă 2018, Trussardi Jeans."
+        "description": "Fular cu imprimeu, din colecția toamnă-iarnă 2018, Trussardi Jeans.",
+        "quantity": 1
       },
       {
         "id": 16,
@@ -226,11 +246,13 @@
         "colour": "Negru",
         "material": "Piele",
         "brand": "DS Damat",
-        "description": "Mănuși din piele, cu model, din colecția toamnă-iarnă 2018, DS Damat."
+        "description": "Mănuși din piele, cu model, din colecția toamnă-iarnă 2018, DS Damat.",
+        "quantity": 1
       }
     ],
     "image": "https://images.pexels.com/photos/740750/pexels-photo-740750.png?auto=compress&cs=tinysrgb&dpr=1&w=500",
     "name": "Accesorii",
-    "description": "Fulare, căciuli, mănuși: nu mai sta pe gânduri, cumpără-le acuși!"
+    "description": "Fulare, căciuli, mănuși: nu mai sta pe gânduri, cumpără-le acuși!",
+    "quantity": 1
   }
 }

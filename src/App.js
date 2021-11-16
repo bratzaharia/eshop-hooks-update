@@ -6,8 +6,9 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import ProductList from './pages/ProductList'
+import Cart from './pages/Cart'
 import Page404 from './pages/Page404';
-import Category from './pages/Category'
 
 import './App.css';
 import './utils/utility-classes.css';
@@ -43,8 +44,9 @@ class App extends React.Component {
         <Route path='/about' element={<About />} />
         <Route 
           path='/category/:categoryName'
-          element={<Category />}
+          element={<ProductList />}
         />
+        <Route path='/cart' element={<Cart />} />
         <Route path='*' element={<Page404 />} />
       </Routes>
       </Router>
