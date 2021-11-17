@@ -35,7 +35,7 @@ const Header = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        productsNumberCart: state.products.length
+        productsNumberCart: state.cart.products.length
     }
 }
 

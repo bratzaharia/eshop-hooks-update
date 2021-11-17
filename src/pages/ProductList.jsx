@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom'
 import {connect } from 'react-redux'
 import { addToCart } from '../redux/actions/cart'
+import { addToFavourite } from '../redux/actions/favourite'
 
 
 import Layout from './../layout/Layout';
@@ -10,7 +11,7 @@ import productsJSON from '../utils/products.json'
 // aceasta va deveni product list (dintr o categorie anume)
 const ProductList = (props) => {
 
-  const { addToCartProp } = props;
+  const { addToCartProp, addToFavouriteProp } = props;
   console.log(addToCartProp)
  
   const params = useParams();
@@ -55,6 +56,21 @@ const ProductList = (props) => {
                   })
                 }}
               >Add to cart</button>
+
+              <button className="btn btn-outline-dark"
+                onClick={ () => {
+                  addToFavouriteProp({
+                    product: {
+                      id: product.id,
+                      name: product.name,
+                      price: product.price,
+                      currency: product.currency,
+                      image: product.image,
+                      quantity: product.quantity,
+                    }
+                  })
+                }}
+              >Add to favourite</button>
             </div>
           )
         }
@@ -66,7 +82,8 @@ const ProductList = (props) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    addToCartProp: (payload) => dispatch(addToCart(payload))
+    addToCartProp: (payload) => dispatch(addToCart(payload)),
+    addToFavouriteProp: (payload) => dispatch(addToFavourite(payload)),
   }
 }
 
