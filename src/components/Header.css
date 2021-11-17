@@ -4,6 +4,10 @@ header {
   background: #d83c65;
   padding: .5em .5em .5em 0;
 }
+header .flex {
+  display: flex;
+  border: 1px solid red;
+}
 header .logo {
   width: 130px;
   height: auto;
@@ -11,4 +15,8 @@ header .logo {
 header .my-3 {
   margin-top: 0rem !important;
     margin-bottom: 0rem !important;
+}
+header .icon {
+  width: 23px;
+  color: black;
 }
