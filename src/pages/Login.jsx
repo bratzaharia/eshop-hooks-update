@@ -1,18 +1,56 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { connect } from 'react-redux'
+import { Link, useNavigate } from 'react-router-dom';
 
-function Login(props) {
-    console.log(props)
-    return(
-        <div>
-            <h1>Login</h1>
-            {/* Din Login Am vrea sa ajungem cu un click in Register sau in Home => avem nevoie de componenta Link!*/}
-            {/* Link este echivalentul unui tag de tip "a", doar ca acesta nu va reincarca pagina catre care directioneaza */}
-            {/* In atributul "to" punem ruta catre care vrem sa navigam. */}
-            <Link to='/'>Home</Link>
-            <Link to='/register'>Register</Link>
-        </div>
+import { loginUser } from '../redux/actions/user'
+import Layout from '../layout/Layout';
+
+import { ReactComponent as Google } from '../assets/icons/google.svg';
+// import './Login.css'
+
+
+
+const Login = (props) => {
+
+    const navigate = useNavigate();
+    const { loginUser, userData } = props;
+
+    if (userData !== null) {
+        // console.log(userData.multiFactor.user.displayName)
+        navigate("/", { replace: true });
+    }
+    return (
+        <Layout>
+            <div className="login-page">
+
+                <h1 className="h2">Login</h1>
+                <p>Alege providerul cu care vrei să vrei să te loghezi:</p>
+
+                <button
+                    className="btn btn-outline-dark d-flex align-items-center"
+                    onClick={() => loginUser()}
+                >
+                    <Google className="w-50 mr-3" />
+                    <span className="text-nowrap">Loghează-te cu Google</span>
+                </button>
+            </div>
+        </Layout>
     );
+
 }
 
-export default Login;
+
+function mapStateToProps(state) {
+    return {
+        loading: state.user.loading,
+        userData: state.user.data
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        loginUser: () => { dispatch(loginUser()) }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login);
