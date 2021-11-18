@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import Layout from './../layout/Layout';
 import productsJSON from '../utils/products.json'
 import { connect } from 'react-redux';
