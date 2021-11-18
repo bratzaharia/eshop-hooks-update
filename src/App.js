@@ -7,6 +7,7 @@ import About from './pages/About';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import ProductList from './pages/ProductList'
+import Product from './pages/Product'
 import Cart from './pages/Cart'
 import Page404 from './pages/Page404';
 
@@ -47,6 +48,7 @@ class App extends React.Component {
           element={<ProductList />}
         />
         <Route path='/cart' element={<Cart />} />
+        <Route path='/products/:productId' element={<Product />} />
         <Route path='*' element={<Page404 />} />
       </Routes>
       </Router>

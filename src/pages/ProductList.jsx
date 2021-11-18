@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom'
-import {connect } from 'react-redux'
+import { useParams, Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 import { addToCart } from '../redux/actions/cart'
 import { addToFavourite } from '../redux/actions/favourite'
 
@@ -9,11 +9,11 @@ import Layout from './../layout/Layout';
 import productsJSON from '../utils/products.json'
 
 // aceasta va deveni product list (dintr o categorie anume)
-const ProductList = (props) => {
+const ProductList = props => {
 
   const { addToCartProp, addToFavouriteProp } = props;
   console.log(addToCartProp)
- 
+
   const params = useParams();
   console.log(params)
   const curentCategory = (Object.values(params)).toString();
@@ -25,7 +25,7 @@ const ProductList = (props) => {
   }, [])
 
   // this is like match from RRD5
-  console.log(curentCategory)
+  // console.log(curentCategory)
   // this in state
   console.log(products);
 
@@ -40,10 +40,14 @@ const ProductList = (props) => {
 
         {
           products.items && products.items.map((product, index) =>
-            <div key={index}>{product.name} id {product.id}
-              <img src={product.image} alt="" className="w-25"/>
+            <div key={index}>
+              <Link to={`/products/${product.id}`}>
+                {product.name} id {product.id}
+                <img src={product.image} alt="" className="w-25" />
+              </Link>
+
               <button className="btn btn-outline-dark"
-                onClick={ () => {
+                onClick={() => {
                   addToCartProp({
                     product: {
                       id: product.id,
@@ -58,7 +62,7 @@ const ProductList = (props) => {
               >Add to cart</button>
 
               <button className="btn btn-outline-dark"
-                onClick={ () => {
+                onClick={() => {
                   addToFavouriteProp({
                     product: {
                       id: product.id,
