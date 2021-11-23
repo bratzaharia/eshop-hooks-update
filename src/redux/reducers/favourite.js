@@ -36,6 +36,25 @@ function favoriteReducer(state = initialState, action) {
       }
 
 
+    case 'REMOVE_FROM_FAVOURITES':
+      const filteredProducts = state.favourites.filter(favourite => {
+        return favourite.id !== action.payload.id
+      })
+
+      //   return Object.assign({}, state, {
+      //     products: filteredProducts
+      // });
+
+
+      const newState = {
+
+        ...state,
+        favourites: [...filteredProducts],
+
+      };
+      return newState;
+
+
     default:
       return state;
   }

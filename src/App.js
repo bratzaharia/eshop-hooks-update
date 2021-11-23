@@ -9,6 +9,7 @@ import Register from './pages/Register';
 import ProductList from './pages/ProductList'
 import Product from './pages/Product'
 import Cart from './pages/Cart'
+import Favourites from './pages/Favourites'
 import Page404 from './pages/Page404';
 
 import './App.css';
@@ -16,26 +17,8 @@ import './utils/utility-classes.css';
 
 
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {}
-  }
+const App = () => {
 
-  componentDidMount() {
-    // Daca componenta a fost inclusa intr-o componenta de tip "Route"(vezi App.js)
-    // => automat in this.props vin 3 atribute: history, location, match
-    console.log(this.props);
-    // In match gasim parametri rutei
-    // Parametri primiti in ruta se gasesc in cheia params, sub numele dat in componenta
-    // Route corespunzatoare(din App.js).
-    // const categoryName = match.params.categoryName;
-    // Folosindu-ne de categoria venita din URL, extragem din fisierul JSON doar informatiile
-    // necesare acesteia, acualizand state-ul
-    // this.setState({ category: products[categoryName] });
-}
-
-  render() {
     return (
       <Router>
       <Routes>
@@ -47,13 +30,13 @@ class App extends React.Component {
           path='/category/:categoryName'
           element={<ProductList />}
         />
-        <Route path='/cart' element={<Cart />} />
         <Route path='/products/:productId' element={<Product />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/favourites' element={<Favourites />} />
         <Route path='*' element={<Page404 />} />
       </Routes>
       </Router>
     );
-  }
 }
 
 export default App;
