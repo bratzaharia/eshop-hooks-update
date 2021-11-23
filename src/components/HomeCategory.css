@@ -1,6 +1,12 @@
 .category-card {
   text-decoration: none;
 }
-.card {
-  border: 1px solid red;
+.card img{
+  display: block;
+  width: 100%;
+}
+.image-container {
+  height: 260px;
+  overflow: hidden;
+
 }

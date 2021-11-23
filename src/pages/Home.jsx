@@ -29,9 +29,9 @@ const Home = () => {
     return (
         <div>
             <Layout>
-                <div className="container-fluid container-min-max-width">
-                    <div className="row">
-                        <h1>Home</h1>
+                <div className="container container-min-max-width">
+                    <h1>Home</h1>
+                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
                         {
                             categories && categories.map((category, index) =>
                                 <HomeCategory

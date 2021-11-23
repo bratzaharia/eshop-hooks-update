@@ -33,13 +33,26 @@ const ProductList = props => {
     <Layout>
       {/* Pentru a nu a avea o dimensiune prea mare si a fi centrat, continutul
                 paginii trebuie introdus intr-un div cu cele doua clase de mai jos. */}
-      <div className="container-fluid container-min-max-width">
+      {/* <div className="container-fluid container-min-max-width"> */}
+      <div className="row row-cols-1 row-cols-md-3 g-4">
+
         {/* Din categoria curenta, afisam numele */}
         <h2>{curentCategory}</h2>
 
 
         {
           products.items && products.items.map((product, index) =>
+
+        //   <div className="col">
+        //   <div className="card">
+        //     <img src="..." className="card-img-top" alt="..."/>
+        //     <div className="card-body">
+        //       <h5 className="card-title">Card title</h5>
+        //       <p className="card-text">This is a lonittle bit longer.</p>
+        //     </div>
+        //   </div>
+        // </div>
+
             <div key={index}>
               <Link to={`/products/${product.id}`}>
                 {product.name} id {product.id}
