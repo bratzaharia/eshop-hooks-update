@@ -1,5 +1,9 @@
+
 .category-card {
   text-decoration: none;
+}
+.card {
+  overflow: hidden;
 }
 .card img{
   display: block;
