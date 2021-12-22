@@ -21,20 +21,20 @@ const App = () => {
 
     return (
       <Router>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/register' element={<Register />} />
-        <Route path='/about' element={<About />} />
-        <Route 
-          path='/category/:categoryName'
-          element={<ProductList />}
-        />
-        <Route path='/products/:productId' element={<Product />} />
-        <Route path='/cart' element={<Cart />} />
-        <Route path='/favourites' element={<Favourites />} />
-        <Route path='*' element={<Page404 />} />
-      </Routes>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/about' element={<About />} />
+          <Route 
+            path='/category/:categoryName'
+            element={<ProductList />}
+          />
+          <Route path='/products/:productId' element={<Product />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/favourites' element={<Favourites />} />
+          <Route path='*' element={<Page404 />} />
+        </Routes>
       </Router>
     );
 }
